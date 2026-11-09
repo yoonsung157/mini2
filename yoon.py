@@ -94,29 +94,57 @@ print('[1-3] 비수도권 의사:', per_100k(other_doctor, other_pop))
 # 비수도권 의사: 75.6
 # -> 병원 수는 비수도권이 많지만 병원 규모 차이 때문에 의사 수는 수도권이 더 많다
 
+b_gun = b['시군구코드명'].str.endswith('군', na=False)
+gun_doctor = b.loc[b_gun, '총의사수'].sum()
+si_doctor = b.loc[~b_gun, '총의사수'].sum()
+
+print('[1-3] 시 의사:', per_100k(si_doctor, si_pop))
+print('[1-3] 군 의사:', per_100k(gun_doctor, gun_pop))
+# 시 의사: 73.3
+# 군 의사: 17.9
+# -> 병원 수는 군이 시의 약 57%지만, 의사 수는 약 24%로 격차가 더 크다
+
 
 # ===================================================================================================
-# 2. 비수도권 군 지역은 종합병원이 부족한 대신, 인구 10만 명당 공공보건기관
-#    (보건소·보건지소·보건진료소·보건의료원) 수가 시 지역보다 많을 것이다.
+# 2. 비수도권은 수도권보다, 군 지역은 시 지역보다 인구 10만 명당 공공보건기관
+#    (보건소·보건지소·보건진료소·보건의료원) 수가 많을 것이다.
 # ===================================================================================================
-c = non_capital_do(df[df['종별코드명'].isin(PUBLIC)])
+p = df[df['종별코드명'].isin(PUBLIC)]
+p_capital = p['시도코드명'].isin(CAPITAL)
+
+# 2-1. 수도권 vs 비수도권
+capital_public = p_capital.sum()
+other_public = len(p) - capital_public
+
+print('[2-1] 수도권 공공보건기관:', per_100k(capital_public, capital_pop))
+print('[2-1] 비수도권 공공보건기관:', per_100k(other_public, other_pop))
+# 수도권: 1.6  (407곳)
+# 비수도권: 12.2  (3,041곳)
+
+print(p.assign(권역=p_capital.map({True: '수도권', False: '비수도권'}))
+       .groupby(['종별코드명', '권역']).size().unstack(fill_value=0))
+# 보건진료소 수도권 181 / 비수도권 1,718, 보건지소 139 / 1,145, 보건소 86 / 163, 보건의료원 1 / 15
+# -> 비수도권이 약 7.8배 많다. 차이는 대부분 읍·면 단위의 보건지소·보건진료소에서 나온다
+
+# 2-2. 비수도권 시 vs 군
+c = non_capital_do(p)
 is_gun = c['시군구코드명'].str.endswith('군', na=False)
 
 gun_public = is_gun.sum()
 si_public = len(c) - gun_public
 
-print('[2] 시 공공보건기관:', per_100k(si_public, si_pop))
-print('[2] 군 공공보건기관:', per_100k(gun_public, gun_pop))
+print('[2-2] 시 공공보건기관:', per_100k(si_public, si_pop))
+print('[2-2] 군 공공보건기관:', per_100k(gun_public, gun_pop))
 # 시: 10.3  (1,228곳)
 # 군: 52.0  (1,666곳)
 
-# 종류별 개수
 print(c.assign(지역=is_gun.map({True: '군', False: '시'}))
        .groupby(['종별코드명', '지역']).size().unstack(fill_value=0))
 # 보건진료소 시 709 / 군 951, 보건지소 시 455 / 군 642, 보건소 시 64 / 군 58, 보건의료원 군에만 15
+# -> 군 지역이 약 5배 많다
 
-# -> 채택: 군 지역은 종합병원은 시의 약 57% 수준이지만, 공공보건기관은 약 5배 많아
-#    공공의료 의존도가 높다
+# -> 채택: 종합병원이 부족한 지역일수록 공공보건기관이 많아 공공의료 의존도가 높다
+#    (수도권 → 비수도권 7.8배, 비수도권 안에서 시 → 군 5배)
 
 # ===================================================================================================
 # 시각화
@@ -145,49 +173,36 @@ def bar_panel(ax, labels, values, title, fmt, notes=None):
     style(ax, title, max(values) * 1.25)
 
 
-# 그림 1. 수도권 vs 비수도권: 병원 수와 의사 수 (인구 10만 명당)
-fig, axes = plt.subplots(1, 2, figsize=(10, 4.5))
-bar_panel(axes[0], ['수도권', '비수도권'],
-          [per_100k(capital_hospital, capital_pop), per_100k(other_hospital, other_pop)],
-          '인구 10만 명당 종합·상급종합병원 수', '{:.2f}곳',
-          [f'{capital_hospital}곳', f'{other_hospital}곳'])
-bar_panel(axes[1], ['수도권', '비수도권'],
-          [per_100k(capital_doctor, capital_pop), per_100k(other_doctor, other_pop)],
-          '인구 10만 명당 종합·상급종합병원 의사 수', '{:.1f}명')
-fig.suptitle('병원 수는 비수도권이 많지만, 의사 수는 수도권이 많다', fontsize=15, x=0.02, ha='left')
-fig.tight_layout()
-fig.savefig('./images/1_수도권_병원수_의사수.png', dpi=200)
+def two_panel(left, right, title, fmt, filename):
+    """왼쪽: 수도권 vs 비수도권, 오른쪽: 비수도권 시 vs 군"""
+    fig, axes = plt.subplots(1, 2, figsize=(10, 4.5))
+    for ax, labels, (v1, v2, n1, n2), sub in [
+        (axes[0], ['수도권', '비수도권'], left, '수도권 vs 비수도권'),
+        (axes[1], ['시 지역', '군 지역'], right, '비수도권 시 vs 군'),
+    ]:
+        notes = [f'{n1:,}{fmt[1]}', f'{n2:,}{fmt[1]}'] if n1 is not None else None
+        bar_panel(ax, labels, [v1, v2], sub, fmt[0], notes)
+    fig.suptitle(title, fontsize=15, x=0.02, ha='left')
+    fig.tight_layout()
+    fig.savefig(f'./images/{filename}', dpi=200)
 
-# 그림 2. 병원 1곳당 평균 의사 수 (병원 규모 차이)
-size = (a.assign(권역=is_capital.map({True: '수도권', False: '비수도권'}))
-         .groupby(['종별코드명', '권역'])['총의사수'].mean()
-         .unstack()[['수도권', '비수도권']]
-         .loc[['종합병원', '상급종합']])
 
-fig, ax = plt.subplots(figsize=(8, 4.5))
-w = 0.35
-for j, (col, color) in enumerate([('수도권', BLUE), ('비수도권', ORANGE)]):
-    pos = [i + (j - 0.5) * (w + 0.02) for i in range(len(size))]
-    for bar, v in zip(ax.bar(pos, size[col], width=w, color=color, label=col), size[col]):
-        label(ax, bar, f'{v:.0f}명')
-ax.set_xticks(range(len(size)), size.index)
-ax.legend(frameon=False, loc='upper left')
-style(ax, '병원 1곳당 평균 의사 수: 수도권 병원이 약 2배 크다', size.values.max() * 1.15)
-fig.tight_layout()
-fig.savefig('./images/2_병원당_의사수.png', dpi=200)
+# 그림 1. 인구 10만 명당 종합·상급종합병원 수 (가설 1)
+two_panel(
+    (per_100k(capital_hospital, capital_pop), per_100k(other_hospital, other_pop), capital_hospital, other_hospital),
+    (per_100k(si_hospital, si_pop), per_100k(gun_hospital, gun_pop), si_hospital, gun_hospital),
+    '인구 10만 명당 종합·상급종합병원 수', ('{:.2f}곳', '곳'), '1_종합병원수.png')
 
-# 그림 3. 비수도권 시 vs 군: 종합병원 수와 공공보건기관 수 (인구 10만 명당)
-fig, axes = plt.subplots(1, 2, figsize=(10, 4.5))
-bar_panel(axes[0], ['시 지역', '군 지역'],
-          [per_100k(si_hospital, si_pop), per_100k(gun_hospital, gun_pop)],
-          '인구 10만 명당 종합·상급종합병원 수', '{:.2f}곳',
-          [f'{si_hospital}곳', f'{gun_hospital}곳'])
-bar_panel(axes[1], ['시 지역', '군 지역'],
-          [per_100k(si_public, si_pop), per_100k(gun_public, gun_pop)],
-          '인구 10만 명당 공공보건기관 수', '{:.1f}곳',
-          [f'{si_public:,}곳', f'{gun_public:,}곳'])
-fig.suptitle('군 지역은 종합병원 대신 공공보건기관이 의료를 떠받친다', fontsize=15, x=0.02, ha='left')
-fig.tight_layout()
-fig.savefig('./images/3_시군_종합병원_공공보건기관.png', dpi=200)
+# 그림 2. 인구 10만 명당 종합·상급종합병원 의사 수 (가설 1 보충)
+two_panel(
+    (per_100k(capital_doctor, capital_pop), per_100k(other_doctor, other_pop), capital_doctor, other_doctor),
+    (per_100k(si_doctor, si_pop), per_100k(gun_doctor, gun_pop), si_doctor, gun_doctor),
+    '인구 10만 명당 종합·상급종합병원 의사 수', ('{:.1f}명', '명'), '2_의사수.png')
+
+# 그림 3. 인구 10만 명당 공공보건기관 수 (가설 2)
+two_panel(
+    (per_100k(capital_public, capital_pop), per_100k(other_public, other_pop), capital_public, other_public),
+    (per_100k(si_public, si_pop), per_100k(gun_public, gun_pop), si_public, gun_public),
+    '인구 10만 명당 공공보건기관 수', ('{:.1f}곳', '곳'), '3_공공보건기관수.png')
 
 plt.show()
