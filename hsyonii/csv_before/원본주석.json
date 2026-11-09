@@ -1,0 +1,2733 @@
+[
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "74p적용인구",
+    "notes": [
+      [
+        "주 1) 연도말 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 1) As of the end of the Year",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "2) 실거주지 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 2) Based on the resident place",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "3) 의료급여의 경우 구 단위까지 자료가 없는 지역은 해당 시의 첫번째 행에 시 단위 자료 수록",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 3) In the case of medical assistance, regions where district-level data is unavailale shall have city-level data recorded under the first district",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "76p",
+    "notes": [
+      [
+        "주 1) 연도말 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 1) As of the end of the Year",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "2) 실거주지 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 2) Based on the resident place",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "3) 의료급여의 경우 구 단위까지 자료가 없는 지역은 해당 시의 첫번째 행에 시 단위 자료 수록",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 3) In the case of medical assistance, regions where district-level data is unavailale shall have city-level data recorded under the first district",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "128p",
+    "notes": [
+      [
+        "주 1) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 1) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "2) 연내 자격 변동(건강보험↔의료급여)으로 인한 중복인원을 제외한 값임",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "3) 연도말 실거주지 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 2) Patient counts exclude overlaps from eligibility changes within the year(NHIS ↔ Medical Aid)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 3) Based on the resident place",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "130p",
+    "notes": [
+      [
+        "주 1) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 1) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "2) 연내 자격 변동(건강보험↔의료급여)으로 인한 중복인원을 제외한 값임",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "3) 연도말 실거주지 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 2) Patient counts exclude overlaps from eligibility changes within the year(NHIS ↔ Medical Aid)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 3) Based on the resident place",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "146p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses /benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "148p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses /benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "150p",
+    "notes": [
+      [
+        "주) 진료일 기준이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "152p",
+    "notes": [
+      [
+        "주) 진료일 기준이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "154p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses /benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "156p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses /benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "158p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses /benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "160p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses /benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "162p",
+    "notes": [
+      [
+        "주) 진료일 기준이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "164p",
+    "notes": [
+      [
+        "주) 진료일 기준이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "166p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses /benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "168p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses /benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "248p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "250p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "252p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "254p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "256p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "258p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "260p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "02_서울 인천 경기 강원_2025.xlsx",
+    "sheet": "262p",
+    "notes": [
+      [
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "03_대전 충북 충남 세종_2025.xlsx",
+    "sheet": "266p적용인구",
+    "notes": [
+      [
+        "주 1) 연도말 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 1) As of the end of the Year",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "2) 실거주지 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 2) Based on the resident place",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "3) 의료급여의 경우, 공백이 있는 지역은 구 단위까지 자료가 없는 지역으로서 해당 시의 첫번째 행에 시 단위 자료 수록",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 3) In the case of medical assistance, regions where district-level data is unavailale shall have city-level data recorded under the first district",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "03_대전 충북 충남 세종_2025.xlsx",
+    "sheet": "292p",
+    "notes": [
+      [
+        "주 1) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 1) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "2) 연내 자격 변동(건강보험↔의료급여)으로 인한 중복인원을 제외한 값임",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "3) 연도말 실거주지 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 2) Patient counts exclude overlaps from eligibility changes within the year(NHIS ↔ Medical Aid)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 3) Based on the resident place",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "03_대전 충북 충남 세종_2025.xlsx",
+    "sheet": "302p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "03_대전 충북 충남 세종_2025.xlsx",
+    "sheet": "304p",
+    "notes": [
+      [
+        "주) 진료일 기준이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "03_대전 충북 충남 세종_2025.xlsx",
+    "sheet": "306p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "03_대전 충북 충남 세종_2025.xlsx",
+    "sheet": "308p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "03_대전 충북 충남 세종_2025.xlsx",
+    "sheet": "310p",
+    "notes": [
+      [
+        "주) 진료일 기준이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "03_대전 충북 충남 세종_2025.xlsx",
+    "sheet": "312p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "03_대전 충북 충남 세종_2025.xlsx",
+    "sheet": "356p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "03_대전 충북 충남 세종_2025.xlsx",
+    "sheet": "358p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "03_대전 충북 충남 세종_2025.xlsx",
+    "sheet": "360p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "03_대전 충북 충남 세종_2025.xlsx",
+    "sheet": "362p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "04_광주 전북 전남 제주_2025.xlsx",
+    "sheet": "366p적용인구",
+    "notes": [
+      [
+        "주 1) 연도말 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 1) As of the end of the Year",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "2) 실거주지 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 2) Based on the resident place",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "3) 의료급여의 경우, 공백이 있는 지역은 구 단위까지 자료가 없는 지역으로서 해당 시의 첫번째 행에 시 단위 자료 수록",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 3) In the case of medical assistance, regions where district-level data is unavailale shall have city-level data recorded under the first district",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "04_광주 전북 전남 제주_2025.xlsx",
+    "sheet": "394p",
+    "notes": [
+      [
+        "주 1) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 1) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "2) 연내 자격 변동(건강보험↔의료급여)으로 인한 중복인원을 제외한 값임",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "3) 연도말 실거주지 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 2) Patient counts exclude overlaps from eligibility changes within the year(NHIS ↔ Medical Aid)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 3) Based on the resident place",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "5) 보험료분위: 전체 대상자(세대)를 10분위로 균등 분할",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "04_광주 전북 전남 제주_2025.xlsx",
+    "sheet": "404p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "04_광주 전북 전남 제주_2025.xlsx",
+    "sheet": "406p",
+    "notes": [
+      [
+        "주) 진료일 기준이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "04_광주 전북 전남 제주_2025.xlsx",
+    "sheet": "408p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "04_광주 전북 전남 제주_2025.xlsx",
+    "sheet": "410p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "04_광주 전북 전남 제주_2025.xlsx",
+    "sheet": "412p",
+    "notes": [
+      [
+        "주) 진료일 기준이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "04_광주 전북 전남 제주_2025.xlsx",
+    "sheet": "414p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "04_광주 전북 전남 제주_2025.xlsx",
+    "sheet": "458p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "04_광주 전북 전남 제주_2025.xlsx",
+    "sheet": "460p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "04_광주 전북 전남 제주_2025.xlsx",
+    "sheet": "462p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "04_광주 전북 전남 제주_2025.xlsx",
+    "sheet": "464p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "468p적용인구",
+    "notes": [
+      [
+        "주 1) 연도말 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 1) As of the end of the Year",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "2) 실거주지 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 2) Based on the resident place",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "3) 의료급여의 경우 구 단위까지 자료가 없는 지역은 해당 시의 첫번째 행에 시 단위 자료 수록",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 3) In the case of medical assistance, regions where district-level data is unavailale shall have city-level data recorded under the first district",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "470p",
+    "notes": [
+      [
+        "주 1) 연도말 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 1) As of the end of the Year",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "주 2) 실거주지 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "2) Based on the resident place",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "3) 의료급여의 경우 구 단위까지 자료가 없는 지역은 해당 시의 첫번째 행에 시 단위 자료 수록",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 3) In the case of medical assistance, regions where district-level data is unavailale shall have city-level data recorded under the first district",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "514p",
+    "notes": [
+      [
+        "주 1) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 1) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "2) 연내 자격 변동(건강보험↔의료급여)으로 인한 중복인원을 제외한 값임",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "3) 연도말 실거주지 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 2) Patient counts exclude overlaps from eligibility changes within the year(NHIS ↔ Medical Aid)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 3) Based on the resident place",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "516p",
+    "notes": [
+      [
+        "주 1) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 1) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expense",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "2) 연내 자격 변동(건강보험↔의료급여)으로 인한 중복인원을 제외한 값임",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "3) 연도말 실거주지 기준",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 2) Patient counts exclude overlaps from eligibility changes within the year(NHIS ↔ Medical Aid)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note 3) Based on the resident place",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "532p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "534p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "536p",
+    "notes": [
+      [
+        "주) 진료일 기준이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "538p",
+    "notes": [
+      [
+        "주) 진료일 기준이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "540p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "542p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "544p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "546p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "548p",
+    "notes": [
+      [
+        "주) 진료일 기준이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "550p",
+    "notes": [
+      [
+        "주) 진료일 기준이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "552p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "554p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments(excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "634p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "636p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "637p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "638p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "640p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "642p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "/Benefits Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "644p",
+    "notes": [
+      [
+        "주) 진료일 기준(의료이용은 약국제외, 요양급여일수, 진료비와 급여비는 약국포함)이며, 의료급여 포함",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "file": "05_부산 대구 울산 경북 경남_2025.xlsx",
+    "sheet": "645p",
+    "notes": [
+      [
+        "Note) Based on the Treatments (excluding pharmacy from Medical Service Use, including pharmacy in Treatment Days/Medical Expenses",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "/Benefit Amount) including Medical aid",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  }
+]
