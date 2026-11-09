@@ -1,0 +1,46 @@
+{
+  "수집일": "2026-11-09",
+  "검색기록": [
+    {
+      "검색어": "응급실 운영 중단",
+      "페이지": 1,
+      "검색URL": "https://search.daum.net/search?w=news&q=%EC%9D%91%EA%B8%89%EC%8B%A4+%EC%9A%B4%EC%98%81+%EC%A4%91%EB%8B%A8&period=u&sd=20250101000000&ed=20251231235959&p=1",
+      "발견URL수": 16
+    },
+    {
+      "검색어": "응급실 운영 중단",
+      "페이지": 2,
+      "검색URL": "https://search.daum.net/search?w=news&q=%EC%9D%91%EA%B8%89%EC%8B%A4+%EC%9A%B4%EC%98%81+%EC%A4%91%EB%8B%A8&period=u&sd=20250101000000&ed=20251231235959&p=2",
+      "발견URL수": 16
+    },
+    {
+      "검색어": "보건지소 의사 부족",
+      "페이지": 1,
+      "검색URL": "https://search.daum.net/search?w=news&q=%EB%B3%B4%EA%B1%B4%EC%A7%80%EC%86%8C+%EC%9D%98%EC%82%AC+%EB%B6%80%EC%A1%B1&period=u&sd=20250101000000&ed=20251231235959&p=1",
+      "발견URL수": 16
+    },
+    {
+      "검색어": "보건지소 의사 부족",
+      "페이지": 2,
+      "검색URL": "https://search.daum.net/search?w=news&q=%EB%B3%B4%EA%B1%B4%EC%A7%80%EC%86%8C+%EC%9D%98%EC%82%AC+%EB%B6%80%EC%A1%B1&period=u&sd=20250101000000&ed=20251231235959&p=2",
+      "발견URL수": 13
+    },
+    {
+      "검색어": "야간 진료 축소",
+      "페이지": 1,
+      "검색URL": "https://search.daum.net/search?w=news&q=%EC%95%BC%EA%B0%84+%EC%A7%84%EB%A3%8C+%EC%B6%95%EC%86%8C&period=u&sd=20250101000000&ed=20251231235959&p=1",
+      "발견URL수": 10
+    },
+    {
+      "검색어": "야간 진료 축소",
+      "페이지": 2,
+      "검색URL": "https://search.daum.net/search?w=news&q=%EC%95%BC%EA%B0%84+%EC%A7%84%EB%A3%8C+%EC%B6%95%EC%86%8C&period=u&sd=20250101000000&ed=20251231235959&p=2",
+      "발견URL수": 13
+    }
+  ],
+  "발견URL수": 84,
+  "2025년게시일확인보도수": 84,
+  "실패": [],
+  "범위": "검색어 3개별 검색 결과 2페이지 내 다음 뉴스 기사. 전국 전수자료 아님.",
+  "주의": "기사 내용의 관련성과 사건 단위 중복은 미검토. 기존 사례집과 별도 저장."
+}
