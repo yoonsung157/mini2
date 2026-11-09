@@ -8,19 +8,13 @@ plt.rcParams["axes.unicode_minus"] = False
 data_list = []
 for quarter in range(1, 5):
     file_path = rf"C:\Users\gmgd0\mini2\data\지역별종별_전문과목별전문의수_2025년{quarter}분기.csv"
-    data = pd.read_csv(
-        file_path,
-        encoding="utf-8-sig",
-        header=2
-    )
-
+    data = pd.read_csv(file_path, encoding="utf-8-sig", header=2)
     data.columns = data.columns.str.strip()
     data["분기"] = quarter
     data_list.append(data)
-
 df = pd.concat(data_list, ignore_index=True)
 
-# 2. 종합병원과 상급종합병원 선택
+# 종합병원과 상급종합병원 선택
 df["시도"] = df["시도"].astype("string").str.strip()
 df["요양기관종별"] = (
     df["요양기관종별"].astype("string").str.strip()
@@ -29,7 +23,7 @@ df["요양기관종별"] = (
 hospital_types = ["종합병원", "상급종합병원"]
 df = df[df["요양기관종별"].isin(hospital_types)].copy()
 
-# 3. 분석할 전문과목 선택
+# 분석할 전문과목 선택
 specialties = [
     "내과", "신경과", "정신건강의학과", "외과", "정형외과",
     "신경외과", "심장혈관흉부외과", "성형외과", "마취통증의학과",
@@ -146,7 +140,7 @@ fig.savefig(
 )
 plt.show()
 
-# 9. 가설 4 — 전국 전문과목별 감소율
+# 가설 4 — 전국 전문과목별 감소율
 national_totals = (
     df.groupby("분기")[specialties]
     .agg(complete_sum)
@@ -204,7 +198,7 @@ if unavailable_specialties:
     )
     print("전체 과목의 순위는 해당 자료 확인 후 확정합니다.")
 
-# 10. 가설 4 시각화 
+# 가설 4 시각화 
 plot_values = results["감소율(%)"].dropna()
 
 if not plot_values.empty:
