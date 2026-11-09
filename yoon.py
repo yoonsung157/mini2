@@ -173,36 +173,41 @@ def bar_panel(ax, labels, values, title, fmt, notes=None):
     style(ax, title, max(values) * 1.25)
 
 
-def two_panel(left, right, title, fmt, filename):
-    """왼쪽: 수도권 vs 비수도권, 오른쪽: 비수도권 시 vs 군"""
+def two_panel(panels, title, filename):
+    """panels: [(라벨 2개, 값 2개, 실제 개수 2개, 소제목, 값 형식, 단위), ...] 2개"""
     fig, axes = plt.subplots(1, 2, figsize=(10, 4.5))
-    for ax, labels, (v1, v2, n1, n2), sub in [
-        (axes[0], ['수도권', '비수도권'], left, '수도권 vs 비수도권'),
-        (axes[1], ['시 지역', '군 지역'], right, '비수도권 시 vs 군'),
-    ]:
-        notes = [f'{n1:,}{fmt[1]}', f'{n2:,}{fmt[1]}'] if n1 is not None else None
-        bar_panel(ax, labels, [v1, v2], sub, fmt[0], notes)
+    for ax, (labels, values, counts, sub, fmt, unit) in zip(axes, panels):
+        bar_panel(ax, labels, values, sub, fmt, [f'{n:,}{unit}' for n in counts])
     fig.suptitle(title, fontsize=15, x=0.02, ha='left')
     fig.tight_layout()
     fig.savefig(f'./images/{filename}', dpi=200)
 
 
-# 그림 1. 인구 10만 명당 종합·상급종합병원 수 (가설 1·2)
-two_panel(
-    (per_100k(capital_hospital, capital_pop), per_100k(other_hospital, other_pop), capital_hospital, other_hospital),
-    (per_100k(si_hospital, si_pop), per_100k(gun_hospital, gun_pop), si_hospital, gun_hospital),
-    '인구 10만 명당 종합·상급종합병원 수', ('{:.2f}곳', '곳'), '1_종합병원수.png')
+REGION = ['수도권', '비수도권']
+SIGUN = ['시 지역', '군 지역']
 
-# 그림 2. 인구 10만 명당 종합·상급종합병원 의사 수 (가설 1·2 보충)
-two_panel(
-    (per_100k(capital_doctor, capital_pop), per_100k(other_doctor, other_pop), capital_doctor, other_doctor),
-    (per_100k(si_doctor, si_pop), per_100k(gun_doctor, gun_pop), si_doctor, gun_doctor),
-    '인구 10만 명당 종합·상급종합병원 의사 수', ('{:.1f}명', '명'), '2_의사수.png')
+# 그림 1. 수도권 vs 비수도권: 종합병원 수와 의사 수 (가설 1)
+two_panel([
+    (REGION, [per_100k(capital_hospital, capital_pop), per_100k(other_hospital, other_pop)],
+     [capital_hospital, other_hospital], '인구 10만 명당 종합·상급종합병원 수', '{:.2f}곳', '곳'),
+    (REGION, [per_100k(capital_doctor, capital_pop), per_100k(other_doctor, other_pop)],
+     [capital_doctor, other_doctor], '인구 10만 명당 종합·상급종합병원 의사 수', '{:.1f}명', '명'),
+], '수도권 vs 비수도권: 병원 수는 비수도권이, 의사 수는 수도권이 많다', '1_수도권_비수도권.png')
+
+# 그림 2. 비수도권 시 vs 군: 종합병원 수와 의사 수 (가설 2)
+two_panel([
+    (SIGUN, [per_100k(si_hospital, si_pop), per_100k(gun_hospital, gun_pop)],
+     [si_hospital, gun_hospital], '인구 10만 명당 종합·상급종합병원 수', '{:.2f}곳', '곳'),
+    (SIGUN, [per_100k(si_doctor, si_pop), per_100k(gun_doctor, gun_pop)],
+     [si_doctor, gun_doctor], '인구 10만 명당 종합·상급종합병원 의사 수', '{:.1f}명', '명'),
+], '비수도권 시 vs 군: 군 지역은 병원 수와 의사 수 모두 부족하다', '2_시_군.png')
 
 # 그림 3. 인구 10만 명당 공공보건기관 수 (가설 3)
-two_panel(
-    (per_100k(capital_public, capital_pop), per_100k(other_public, other_pop), capital_public, other_public),
-    (per_100k(si_public, si_pop), per_100k(gun_public, gun_pop), si_public, gun_public),
-    '인구 10만 명당 공공보건기관 수', ('{:.1f}곳', '곳'), '3_공공보건기관수.png')
+two_panel([
+    (REGION, [per_100k(capital_public, capital_pop), per_100k(other_public, other_pop)],
+     [capital_public, other_public], '수도권 vs 비수도권', '{:.1f}곳', '곳'),
+    (SIGUN, [per_100k(si_public, si_pop), per_100k(gun_public, gun_pop)],
+     [si_public, gun_public], '비수도권 시 vs 군', '{:.1f}곳', '곳'),
+], '인구 10만 명당 공공보건기관 수', '3_공공보건기관수.png')
 
 plt.show()
