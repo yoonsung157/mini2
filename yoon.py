@@ -55,41 +55,41 @@ si_pop = population2.loc[use & sigungu.str.endswith('시', na=False), pop_col].s
 gun_pop = population2.loc[use & sigungu.str.endswith('군', na=False), pop_col].sum()
 
 # ===================================================================================================
-# 1. 수도권은 비수도권보다, 시 지역은 군 지역보다
-#    인구 10만 명당 종합병원·상급종합병원 수가 많을 것이다.
+# 1. 수도권은 비수도권보다 인구 대비 종합병원이 많을 것이다.
+# 2. 비수도권 안에서 시 지역은 군 지역보다 인구 대비 종합병원이 많을 것이다.
 # ===================================================================================================
 a = df[df['종별코드명'].isin(HOSPITAL)]
 is_capital = a['시도코드명'].isin(CAPITAL)
 
-# 1-1. 수도권 vs 비수도권
+# 가설 1. 수도권 vs 비수도권
 capital_hospital = is_capital.sum()
 other_hospital = len(a) - capital_hospital
 
-print('[1-1] 수도권:', per_100k(capital_hospital, capital_pop))
-print('[1-1] 비수도권:', per_100k(other_hospital, other_pop))
+print('[1] 수도권:', per_100k(capital_hospital, capital_pop))
+print('[1] 비수도권:', per_100k(other_hospital, other_pop))
 # 수도권: 0.59  (153곳)
 # 비수도권: 0.93  (231곳)
-# -> 오히려 비수도권이 인구 대비 병원 수가 더 많다
+# -> 기각: 오히려 비수도권이 인구 대비 병원 수가 더 많다
 
-# 1-2. 비수도권 시 vs 군
+# 가설 2. 비수도권 시 vs 군
 b = non_capital_do(a)
 print(b['시도코드명'].value_counts())   # 필터 후 시도별 병원 수 확인
 
 gun_hospital = b['시군구코드명'].str.endswith('군', na=False).sum()
 si_hospital = len(b) - gun_hospital
 
-print('[1-2] 시:', per_100k(si_hospital, si_pop))
-print('[1-2] 군:', per_100k(gun_hospital, gun_pop))
+print('[2] 시:', per_100k(si_hospital, si_pop))
+print('[2] 군:', per_100k(gun_hospital, gun_pop))
 # 시: 0.99  (118곳 / 인구 11,876,621명)
 # 군: 0.56  (18곳 / 인구 3,203,317명)
-# -> 군 지역이 시 지역보다 약 1.8배 적다
+# -> 채택: 군 지역이 시 지역보다 약 1.8배 적다
 
-# 1-3. (보충) 인구 10만 명당 의사 수
+# (보충) 가설 1·2: 인구 10만 명당 의사 수
 capital_doctor = a.loc[is_capital, '총의사수'].sum()
 other_doctor = a['총의사수'].sum() - capital_doctor
 
-print('[1-3] 수도권 의사:', per_100k(capital_doctor, capital_pop))
-print('[1-3] 비수도권 의사:', per_100k(other_doctor, other_pop))
+print('[보충] 수도권 의사:', per_100k(capital_doctor, capital_pop))
+print('[보충] 비수도권 의사:', per_100k(other_doctor, other_pop))
 # 수도권 의사: 103.0
 # 비수도권 의사: 75.6
 # -> 병원 수는 비수도권이 많지만 병원 규모 차이 때문에 의사 수는 수도권이 더 많다
@@ -98,26 +98,26 @@ b_gun = b['시군구코드명'].str.endswith('군', na=False)
 gun_doctor = b.loc[b_gun, '총의사수'].sum()
 si_doctor = b.loc[~b_gun, '총의사수'].sum()
 
-print('[1-3] 시 의사:', per_100k(si_doctor, si_pop))
-print('[1-3] 군 의사:', per_100k(gun_doctor, gun_pop))
+print('[보충] 시 의사:', per_100k(si_doctor, si_pop))
+print('[보충] 군 의사:', per_100k(gun_doctor, gun_pop))
 # 시 의사: 73.3
 # 군 의사: 17.9
 # -> 병원 수는 군이 시의 약 57%지만, 의사 수는 약 24%로 격차가 더 크다
 
 
 # ===================================================================================================
-# 2. 비수도권은 수도권보다, 군 지역은 시 지역보다 인구 10만 명당 공공보건기관
-#    (보건소·보건지소·보건진료소·보건의료원) 수가 많을 것이다.
+# 3. 비수도권·군 지역은 수도권·시 지역보다 인구 대비 공공보건기관이 많을 것이다.
+#    (공공보건기관: 보건소·보건지소·보건진료소·보건의료원)
 # ===================================================================================================
 p = df[df['종별코드명'].isin(PUBLIC)]
 p_capital = p['시도코드명'].isin(CAPITAL)
 
-# 2-1. 수도권 vs 비수도권
+# 3-1. 수도권 vs 비수도권
 capital_public = p_capital.sum()
 other_public = len(p) - capital_public
 
-print('[2-1] 수도권 공공보건기관:', per_100k(capital_public, capital_pop))
-print('[2-1] 비수도권 공공보건기관:', per_100k(other_public, other_pop))
+print('[3-1] 수도권 공공보건기관:', per_100k(capital_public, capital_pop))
+print('[3-1] 비수도권 공공보건기관:', per_100k(other_public, other_pop))
 # 수도권: 1.6  (407곳)
 # 비수도권: 12.2  (3,041곳)
 
@@ -126,15 +126,15 @@ print(p.assign(권역=p_capital.map({True: '수도권', False: '비수도권'}))
 # 보건진료소 수도권 181 / 비수도권 1,718, 보건지소 139 / 1,145, 보건소 86 / 163, 보건의료원 1 / 15
 # -> 비수도권이 약 7.8배 많다. 차이는 대부분 읍·면 단위의 보건지소·보건진료소에서 나온다
 
-# 2-2. 비수도권 시 vs 군
+# 3-2. 비수도권 시 vs 군
 c = non_capital_do(p)
 is_gun = c['시군구코드명'].str.endswith('군', na=False)
 
 gun_public = is_gun.sum()
 si_public = len(c) - gun_public
 
-print('[2-2] 시 공공보건기관:', per_100k(si_public, si_pop))
-print('[2-2] 군 공공보건기관:', per_100k(gun_public, gun_pop))
+print('[3-2] 시 공공보건기관:', per_100k(si_public, si_pop))
+print('[3-2] 군 공공보건기관:', per_100k(gun_public, gun_pop))
 # 시: 10.3  (1,228곳)
 # 군: 52.0  (1,666곳)
 
@@ -187,19 +187,19 @@ def two_panel(left, right, title, fmt, filename):
     fig.savefig(f'./images/{filename}', dpi=200)
 
 
-# 그림 1. 인구 10만 명당 종합·상급종합병원 수 (가설 1)
+# 그림 1. 인구 10만 명당 종합·상급종합병원 수 (가설 1·2)
 two_panel(
     (per_100k(capital_hospital, capital_pop), per_100k(other_hospital, other_pop), capital_hospital, other_hospital),
     (per_100k(si_hospital, si_pop), per_100k(gun_hospital, gun_pop), si_hospital, gun_hospital),
     '인구 10만 명당 종합·상급종합병원 수', ('{:.2f}곳', '곳'), '1_종합병원수.png')
 
-# 그림 2. 인구 10만 명당 종합·상급종합병원 의사 수 (가설 1 보충)
+# 그림 2. 인구 10만 명당 종합·상급종합병원 의사 수 (가설 1·2 보충)
 two_panel(
     (per_100k(capital_doctor, capital_pop), per_100k(other_doctor, other_pop), capital_doctor, other_doctor),
     (per_100k(si_doctor, si_pop), per_100k(gun_doctor, gun_pop), si_doctor, gun_doctor),
     '인구 10만 명당 종합·상급종합병원 의사 수', ('{:.1f}명', '명'), '2_의사수.png')
 
-# 그림 3. 인구 10만 명당 공공보건기관 수 (가설 2)
+# 그림 3. 인구 10만 명당 공공보건기관 수 (가설 3)
 two_panel(
     (per_100k(capital_public, capital_pop), per_100k(other_public, other_pop), capital_public, other_public),
     (per_100k(si_public, si_pop), per_100k(gun_public, gun_pop), si_public, gun_public),
